@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AR PHOTOGRAPHY</title>
+	<style type="text/css">
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: black; font-family: calibri; padding-right: 15px;padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: grey; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+		button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+        .container{
+            max-width: 1500px;
+            margin:auto;
+            background: #f2f2f2;
+            overflow:auto;
+        }
+        .gallery{
+            margin:5px;
+            border:1px solid #ccc;
+            float:left;
+            width:390px;
+        }
+        .gallery img{
+            width: 100%;
+            height: auto;
+        }
+        .desc{
+            padding: 15px;
+            text-align: center;
+        }
+
+        input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px;
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical 
+        }
+
+        input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+        
+        .container {
+        border-radius: 8px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        }
+      
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">AR PHOTOGRAPHY</a> </div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<button><a href="#">SignIn</a></button>
+				<button><a href="#">SignUp</a></button>
+			</ul>
+		</div>
+	</nav> 
+<div class ="container">
+        
+    <div class ="gallery">
+            <img src = "wed.jpg">
+                <div class ="desc"> WEDDING PHOTOGRAPHY </div>  
+    </div>
+
+    <div class ="gallery">
+        <img src = "pre.jpg">
+            <div class ="desc"> PRE WEDDING PHOTOGRAPHY </div>  
+    </div>
+
+    <div class ="gallery">
+        <img src = "can.jpg">
+            <div class ="desc"> CANDID PHOTOGRAPHY </div>  
+    </div>
+
+    <div class ="gallery">
+    <img src = "baby.jpg">
+        <div class ="desc"> BABY SHOWER PHOTOGRAPHY </div>  
+    </div>
+
+    <div class ="gallery">
+        <img src = "event.jpg">
+            <div class ="desc"> EVENT PHOTOGRAPHY </div>  
+    </div>
+
+    <div class ="gallery">
+    <img src = "pot.jpg">
+        <div class ="desc"> PORTRAIT PHOTOGRAPHY </div>  
+    </div>
+
+</div>
+<div class="container">
+    <h1> CONTACT US: </h1>
+    <form action="action_page.php">
+  
+      <label for="fname">Your Name</label>
+      <input type="text" id="Yname" name="yourname" placeholder="Your name..">
+  
+      <label for="pnumber">Phone Number</label>
+      <input type="text" id="pnumber" name="phonenumber" placeholder="Enter your number..">
+  
+      <label for="service">Service </label>
+      <select id="service" name="service">
+        <option value="wedding">Wedding Photography</option>
+        <option value="prewedding">Pre-wedding Photography</option>
+        <option value="candid">Candid Photography</option>
+        <option value="portrait">portrait Photography</option>
+        <option value="babyshower">Baby shower Photography</option>
+        <option value="event">Event Photography</option>
+      </select>
+  
+      <label for="query">If have any queries</label>
+      <textarea id="query" name="query" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+</body>
+</html>
